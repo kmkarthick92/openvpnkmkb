@@ -20,6 +20,10 @@ sudo docker run hello-world
 
 sudo apt update
 
+# pull docker compose files
+wget -O run.sh https://raw.githubusercontent.com/kmkarthick92/dockercomposefiles/master/create.sh
+sh ./run.sh
+
 sudo usermod -aG docker $USER
 newgrp docker
 
