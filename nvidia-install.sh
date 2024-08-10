@@ -1,7 +1,7 @@
 #!/bin/sh
 
 sudo apt update
-sudo apt install nvidia-headless-535-server nvidia-settings nvidia-utils-535-server libnvidia-decode-535-server libnvidia-encode-535-server
+sudo apt install nvidia-headless-535-server nvidia-settings nvidia-utils-535-server libnvidia-decode-535-server libnvidia-encode-535-server -y
 
 curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg \
   && curl -s -L https://nvidia.github.io/libnvidia-container/stable/deb/nvidia-container-toolkit.list | \
