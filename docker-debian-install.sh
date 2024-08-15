@@ -5,6 +5,7 @@ sudo apt-get update
 sudo apt-get install cockpit -y
 sudo apt-get install cockpit-pcp -y
 sudo systemctl enable --now cockpit.socket
+sudo rm /etc/cockpit/disallowed-users
 sudo systemctl start cockpit
 
 # Add Docker's official GPG key:
