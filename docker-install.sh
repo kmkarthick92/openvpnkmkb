@@ -5,6 +5,7 @@ sudo apt-get update
 sudo apt-get install cockpit -y
 sudo apt-get install cockpit-pcp -y
 sudo systemctl enable --now cockpit.socket
+sudo rm /etc/cockpit/disallowed-users
 sudo systemctl start cockpit
 sudo apt-get install ca-certificates curl
 sudo install -m 0755 -d /etc/apt/keyrings
