@@ -134,8 +134,9 @@ function installQuestions() {
 	
 echo ${SERVER_PUB_IP}
 	# Detect public interface and pre-fill for the user
+
 	SERVER_NIC="$(ip -4 route ls | grep default | awk '/dev/ {for (i=1; i<=NF; i++) if ($i == "dev") print $(i+1)}' | head -1)"
-	echo ${SERVER_NIC}
+	SERVER_PUB_NIC=${SERVER_NIC}
 
 SERVER_WG_NIC=wg0
 
